@@ -55,21 +55,19 @@ You need to import the `CardCash_API` library
 You need to initialize a new API class `API(string appID, Boolean isProduction = false, Boolean debug = false)`
 
 To Create new connection to sandbox:
-```$CC_API = new API(appID, false, false);```
+```CC_API = new API(appID, false, false);```
 
 To Create new connection to production:
-```$CC_API = new API(appID, true, false);```
+```CC_API = new API(appID, true, false);```
 
 To debug CardCash Cookies with CardCash help:
-```$CC_API = new API(appID, false, true);```
+```CC_API = new API(appID, false, true);```
 
 IT IS HIGHLY RECOMMENDED TO ALWAYS START WITH A `CUSTOMER LOGIN` CALL - YOU CAN'T GET YOUR MERCHANT PRICING, SAVE YOUR CART, OR PLACE A ORDER WITHOUT BEING LOGGED IN!
 
-`$CC_API->CustomerLogin(emailAddr, pwd);`
+`CC_API.CustomerLogin(emailAddr, pwd);`
 
 
 ## Examples
 
-[Get Orders & Get Cards](https://github.com/CardCashLLC/CardCash_API_SDK_PHP/blob/master/examples/getOrders.php)
-
-[Place a Order](https://github.com/CardCashLLC/CardCash_API_SDK_PHP/blob/master/examples/placeOrder.php)
+[Place a Order](https://github.com/CardCashLLC/CardCash_API_SDK_JAVA/blob/master/examples/main.java)
