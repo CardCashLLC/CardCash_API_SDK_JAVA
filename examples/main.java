@@ -10,8 +10,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.cardcash.API
-
 public class main {
 
 
@@ -48,7 +46,7 @@ public class main {
         Map<String, Object> PaymentOptionsDataSellItem = gson.fromJson(PaymentOptionsDataSell.get("sell").toString(), new TypeToken<Map<String, Object>>() {}.getType());
         List<PaymentOptionsList> myObjects = Arrays.asList(gson.fromJson(PaymentOptionsDataSellItem.get("items").toString(), PaymentOptionsList[].class));
         PaymentOptionsList item0 = myObjects.get(0);
-        PaymentDetailsDetails paymentId = gson.fromJson(item0.getPaymentDetails().toString(), PaymentDetailsDetails.class);
+        PaymentDetails paymentId = gson.fromJson(item0.getPaymentDetails().toString(), PaymentDetails.class);
         Integer defaultPaymentID = paymentId.getId();
 
 

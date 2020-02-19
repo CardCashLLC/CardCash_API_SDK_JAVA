@@ -5,6 +5,35 @@ This is currently a simple CardCash API SDK written in JAVA to assist bulk selle
 
 ## Dependencies
 * JAVA (>= 1.8)
+* com.google.code.gso (>=2.8.6)
+* org.apache.httpcomponents (4.5.10)
+
+### maven
+
+```$xslt
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.8.6</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.10</version>
+</dependency>
+```
+
+### gradle
+
+```$xslt
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'org.apache.httpcomponents:httpclient:4.5.10'
+    compile 'com.google.code.gson:gson:2.8.6' 
+}
+```
 
 ## Requirements
 
